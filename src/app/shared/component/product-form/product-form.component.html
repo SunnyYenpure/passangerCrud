@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-content>
+        <form #formRef="ngForm" (ngSubmit)="onAddProd()">
+            <h4>Add Electric Equipments</h4>
+            <div class="form-group">
+                <input
+                ngModel
+                required
+                name="name"
+                class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <textarea
+                ngModel
+                required
+                name="content"
+                class="form-control" placeholder="Content"></textarea>
+            </div>
+            <mat-divider></mat-divider>
+            <button class="mt-2" mat-raised-button color="primary">Add</button>
+        </form>
+    </mat-card-content>
+</mat-card>

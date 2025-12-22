@@ -1,0 +1,14 @@
+<mat-card  class="text-center h-100">
+    <mat-card-title>
+        <h4>{{prodObj.name}}</h4>
+    </mat-card-title>
+    <mat-card-content>
+        <p>{{prodObj.content}}. <strong> {{selectStatus}}</strong></p>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions class="d-flex justify-content-between align-items-center">
+        <button (click)="onProg()" mat-raised-button color="primary">In Progress</button>
+        <button (click)="onDisp()" mat-raised-button color="primary">Dispatched</button>
+        <button (click)="onDeli()"  mat-raised-button color="primary">Delivered</button>
+    </mat-card-actions>
+</mat-card>

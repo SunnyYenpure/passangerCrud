@@ -1,0 +1,13 @@
+<div class="container">
+    <h2 class="bg-info rounded p-2">Passanger details table using service</h2>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <app-passanger-count [passCount]="passArr.length" [passCheckIn]="checkInArr.length"></app-passanger-count>
+            <ul class="list-group mb-3">
+                <li class="list-group-item" *ngFor="let pass of passArr">{{pass.fullname}}</li>
+            </ul>
+            <app-passanger-card (emitRemoveFlag)="getRemoveFlag($event)" [passObj]="pass"
+                *ngFor="let pass of passArr"></app-passanger-card>
+        </div>
+    </div>
+</div>
