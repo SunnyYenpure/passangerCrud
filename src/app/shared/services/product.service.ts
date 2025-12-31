@@ -7,38 +7,39 @@ import { of } from 'rxjs';
 })
 export class ProductService {
   constructor() { }
-  productArr : Array<Iproduct> = [
+productArr: Array<Iproduct> = [
   {
     id: '1',
-    name: "Switch",
-    content: "Used to turn electrical devices on or off safely in homes and offices"
+    name: "Notebook",
+    content: "Used for writing notes, assignments, and daily study work"
   },
   {
     id: '2',
-    name: "Socket",
-    content: "Provides a point to connect electrical plugs and appliances"
+    name: "Pen",
+    content: "Used to write smoothly on paper with ink"
   },
   {
     id: '3',
-    name: "Wire",
-    content: "Carries electric current from one point to another in a circuit"
+    name: "Pencil",
+    content: "Used for writing and sketching, easy to erase"
   },
   {
     id: '4',
-    name: "MCB",
-    content: "Protects electrical circuits from overload and short circuit"
+    name: "Eraser",
+    content: "Used to remove pencil marks from paper"
   },
   {
     id: '5',
-    name: "Fan",
-    content: "Used for air circulation and cooling in rooms"
+    name: "Sharpener",
+    content: "Used to sharpen pencils for clear writing"
   },
   {
     id: '6',
-    name: "LED Bulb",
-    content: "Energy-efficient light source used for illumination"
+    name: "Marker",
+    content: "Used for bold writing on boards and charts"
   }
 ];
+
 
 
   getAllProd(){
